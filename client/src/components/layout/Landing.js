@@ -16,13 +16,12 @@ import { connect } from 'react-redux';
       <div className="row">
        <div className="col-md-12 text-center">
 
-        <h1 className="display-6 mx-auto">Immigrant Portal for St. Louis
-        </h1>
+        <h1 className="display-6 mx-auto">Immigrant Portal for St. Louis </h1>
         <p className="lead1"> Helping immgrants transitioning into new home </p>
-        <hr />
+        <hr/>
         {/* <Link to="/register" className="btn btn-lg btn-dark ">Sign Up</Link>
         <Link to="/login" className="btn btn-lg btn-light">Login</Link> */}
-        <p> In this Community, we connect and help others out by sharing ideas and best practices </p>
+        {/*<p> In this abc Community, we connect and help others out by sharing ideas and best practices</p>*/}
 <div className="card-deck">
  <div className="card">
   <img className="card-img-top" src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47b4b88e2825332da6fb93898562051c&auto=format&fit=crop&w=1050&q=80" alt="Card image cap"/>
