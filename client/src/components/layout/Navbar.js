@@ -24,7 +24,7 @@ class Navbar extends Component {
   
   
             <Link className="nav-link" to="/profiles"> 
-            {'   '} Developers
+            {'   '} Immigrant's Profile
             </Link>
      
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">

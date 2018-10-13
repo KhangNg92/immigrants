@@ -177,14 +177,23 @@ class CreateProfile extends Component {
 
     // Select options for status
     const options = [
-      { label: '* Select an Organization', value: 0 },
-      { label: 'Mosaic Project', value: 'Mosaic Project' },
-      { label: 'International Institute', value: 'International Institute' },
-      { label: 'Community Development Corporation', value: 'Community Development Corporation' },
-      { label: 'Vietnamese Community STL', value: 'Vietnamese Community STL' },
+      { label: '* Select a Country', value: 0 },
+      { label: 'Myanmar', value: 'Myanmar' },
+      { label: 'China', value: 'China' },
+      { label: 'Italy', value: 'Italy' },
+      { label: 'Brazil', value: 'Brazil' },
+      { label: 'Panama', value: 'Panama' },
+      { label: 'Mexico', value: 'Mexico' },
+      { label: 'Vietnam', value: 'Vietnam' },
       { label: 'Other', value: 'Other' }
     ];
+    const options1 = [
+      { label: 'What can we help you', value: 0 },
+      { label: 'Housing', value: 'Housing' },
+      { label: 'Employment', value: 'Employment' },
+      { label: 'Legal Services', value: 'Legal Services' },
 
+    ];
     return (
       <div className="create-profile">
         <div className="container">
@@ -206,56 +215,42 @@ class CreateProfile extends Component {
                   error={errors.handle}
                   info="A unique handle for your profile URL. Your full name, company name, nickname"
                 />
-                <SelectListGroup
-                  placeholder="Status"
+            <SelectListGroup
+                  placeholder="Country"
                   name="status"
                   value={this.state.status}
                   onChange={this.onChange}
                   options={options}
                   error={errors.status}
-                  info="Give us an idea of where you are at in your career"
+                  info="What's your nationality"
                 />
                 <TextFieldGroup
-                  placeholder="Company"
+                  placeholder="Phone Number"
                   name="company"
                   value={this.state.company}
                   onChange={this.onChange}
                   error={errors.company}
-                  info="Could be your own company or one you work for"
+                  info="Update your phone number"
                 />
+            
                 <TextFieldGroup
-                  placeholder="Website"
-                  name="website"
-                  value={this.state.website}
-                  onChange={this.onChange}
-                  error={errors.website}
-                  info="Could be your own website or a company one"
-                />
-                <TextFieldGroup
-                  placeholder="Country"
+                  placeholder="Location in US"
                   name="location"
                   value={this.state.location}
                   onChange={this.onChange}
                   error={errors.location}
-                  info="The Original Country that you're from"
+                  info="What is your current location in the US?"
                 />
-                <TextFieldGroup
-                  placeholder="* Skills"
+                   <SelectListGroup
+                  placeholder=""
                   name="skills"
                   value={this.state.skills}
                   onChange={this.onChange}
+                  options={options1}
                   error={errors.skills}
-                  info="Please use comma separated values (eg.
-                    HTML,CSS,JavaScript,PHP"
+                  info="Let we know what  we can help you with"
                 />
-                <TextFieldGroup
-                  placeholder="Github Username"
-                  name="githubusername"
-                  value={this.state.githubusername}
-                  onChange={this.onChange}
-                  error={errors.githubusername}
-                  info="If you want your latest repos and a Github link, include your username"
-                />
+           
                 <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"

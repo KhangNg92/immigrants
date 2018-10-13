@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
   render() {
     return (
         <div className="landing">
-        <div className="dark-overlay landing-inner text-light">
+        <section className="dark-overlay landing-inner text-light">
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
@@ -25,7 +25,7 @@ import { connect } from 'react-redux';
                 {/* <Link to="/register" className="btn btn-lg btn-dark ">Sign Up</Link>
                 <Link to="/login" className="btn btn-lg btn-light">Login</Link> */}
                 <p> In this Community, we connect, share ideas and help others out by sharing ideas, documents </p>
-<div className="card-deck">
+<section className="card-deck">
   <Link to ='/login' className="card">
     <img className="card-img-top" src="https://images.unsplash.com/photo-1534818113099-dbe2b2e800ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fafe7536d18fede71e9100625feb695c&auto=format&fit=crop&w=1350&q=80" alt="Card image cap"/>
     <div className="card-body">
@@ -50,12 +50,12 @@ import { connect } from 'react-redux';
       <p className="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>
+</section>
 
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     
     

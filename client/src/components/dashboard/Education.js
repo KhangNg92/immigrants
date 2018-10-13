@@ -4,22 +4,17 @@ import PropTypes from 'prop-types';
 
 import Moment from 'react-moment';
 import { deleteEducation } from '../../actions/profileAction';
-import Timeline from 'react-time-line';
 class Education extends Component {
     onDeleteClick(id){
         this.props.deleteEducation(id);
     }
 
   render() {
-    const events = [
-        {ts: "Vietnam", text: 'Housing', years:"2018" },
-   
-      ];
+      
       const education = this.props.education.map(exp => (
           <tr key = {exp._id}>
-        <td><Timeline items={events.ts} /></td>
-        <td><Timeline items = {events.text}/></td>
-        <td><Timeline items = {events.years}/></td>
+          <td>{exp.school}</td>
+          <td>{exp.degree}</td>
           <td>
               
               <Moment format = "YYYY/MM/DD">{exp.from}</Moment> -

@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 import ProfileActions from './ProfileActions';
 import Experience from './Experience';
 import Education from './Education';
-import Timeline from 'react-time-line';
+
 class Dashboard extends Component {
   
   componentDidMount() {
@@ -21,14 +21,7 @@ class Dashboard extends Component {
     render() {
       const { user } = this.props.auth;
       const { profile, loading} = this.props.profile;
-      const events = [
-        {ts: "2017-09-17T12:22:46.587Z", text: 'Logged in'},
-        {ts: "2017-09-17T12:21:46.587Z", text: 'Clicked Home Page'},
-        {ts: "2017-09-17T12:20:46.587Z", text: 'Edited Profile'},
-        {ts: "2017-09-16T12:22:46.587Z", text: 'Registred'},
-        {ts: "2017-09-16T12:21:46.587Z", text: 'Clicked Cart'},
-        {ts: "2017-09-16T12:20:46.587Z", text: 'Clicked Checkout'},
-      ];
+    
       let dashboardContent;
 
       if(profile === null || loading) {
@@ -40,9 +33,9 @@ class Dashboard extends Component {
               <div>
                 <p className = 'lead text-muted'> Welcome <Link to ={`/profile/${profile.handle}`}>{user.name}</Link></p>
                 <ProfileActions />
-                <Experience experience = {profile.experience}/>
-                <Timeline items={events} />
-                <Education education = {profile.education}/>
+                {/* <Experience experience = {profile.experience}/>
+                
+                <Education education = {profile.education}/> */}
                 <div style = {{ marginBottom: '60px'}} />
                 <button onClick = { this.onDeleteClick.bind(this)}
                 className = "btn btn-danger"> Delete My Account</button>

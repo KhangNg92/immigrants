@@ -28,7 +28,7 @@ import {deletePost, addLike, removeLike} from '../../actions/postAction'
     const {post, auth, showActions, profile } = this.props;
 
     return (
-        <div className="card card-body mb-3">
+        <div className="card2 card-body mb-3">
         <div className="row">
           <div className="col-md-2">
       

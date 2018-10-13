@@ -46,9 +46,9 @@ class PostForm extends Component {
 
     return (
       <div className="post-form mb-3">
-        <div className="card card-info">
-          <div className="card-header bg-dark text-white">Your Post here</div>
-          <div className="card-body">
+        <div className="card2 card-info">
+          <div className="card2-header bg-dark text-white">Your Post here</div>
+          <div className="card2-body">
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
                 <TextAreaFieldGroup

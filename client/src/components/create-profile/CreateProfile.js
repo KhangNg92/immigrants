@@ -134,15 +134,11 @@ class CreateProfile extends Component {
       { label: 'Other', value: 'Other' }
     ];
     const options1 = [
-      { label: '* Select Professional Status', value: 0 },
-      { label: 'Developer', value: 'Developer' },
-      { label: 'Junior Developer', value: 'Junior Developer' },
-      { label: 'Senior Developer', value: 'Senior Developer' },
-      { label: 'Manager', value: 'Manager' },
-      { label: 'Student or Learning', value: 'Student or Learning' },
-      { label: 'Instructor or Teacher', value: 'Instructor or Teacher' },
-      { label: 'Intern', value: 'Intern' },
-      { label: 'Other', value: 'Other' }
+      { label: 'What can we help you', value: 0 },
+      { label: 'Housing', value: 'Housing' },
+      { label: 'Employment', value: 'Employment' },
+      { label: 'Legal Services', value: 'Legal Services' },
+
     ];
 
     return (
@@ -154,7 +150,7 @@ class CreateProfile extends Component {
               <p className="lead text-center">
                 Let's get some information to make your profile stand out
               </p>
-              <small className="d-block pb-3">* = required fields</small>
+              <small className="d-block pb-3 text-danger">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
                   placeholder="* Profile Handle"
@@ -162,58 +158,51 @@ class CreateProfile extends Component {
                   value={this.state.handle}
                   onChange={this.onChange}
                   error={errors.handle}
-                  info="A unique handle for your profile URL. Your full name, company name, nickname"
+                  info="A unique handle for your profile URL. Your full name, nickname"
                 />
                 <SelectListGroup
-                  placeholder="Status"
+                  placeholder="Country"
                   name="status"
                   value={this.state.status}
                   onChange={this.onChange}
                   options={options}
                   error={errors.status}
-                  info="Give us an idea of where you are at in your career"
+                  info="What's your nationality"
                 />
                 <TextFieldGroup
-                  placeholder="Company"
+                  placeholder="Phone Number"
                   name="company"
                   value={this.state.company}
                   onChange={this.onChange}
                   error={errors.company}
-                  info="Could be your own company or one you work for"
+                  info="Enter your phone number"
                 />
-                <TextFieldGroup
-                  placeholder="Website"
+             <TextFieldGroup
+                  placeholder="What's app account"
                   name="website"
                   value={this.state.website}
                   onChange={this.onChange}
                   error={errors.website}
-                  info="Could be your own website or a company one"
+                  info="If you'd prefer to connect with What's app please enter"
                 />
                 <TextFieldGroup
-                  placeholder="Location"
+                  placeholder="Location in US"
                   name="location"
                   value={this.state.location}
                   onChange={this.onChange}
                   error={errors.location}
-                  info="City or city & state suggested (eg. Boston, MA)"
+                  info="What is your current location in the US?"
                 />
                <SelectListGroup
-                  placeholder="skills"
+                  placeholder=""
                   name="skills"
                   value={this.state.skills}
                   onChange={this.onChange}
                   options={options1}
                   error={errors.skills}
-                  info="Give us an idea of where you are at in your career"
+                  info="Let we know what  we can help you with"
                 />
-                <TextFieldGroup
-                  placeholder="Github Username"
-                  name="githubusername"
-                  value={this.state.githubusername}
-                  onChange={this.onChange}
-                  error={errors.githubusername}
-                  info="If you want your latest repos and a Github link, include your username"
-                />
+              
                 <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"

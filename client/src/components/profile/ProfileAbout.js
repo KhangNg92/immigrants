@@ -21,9 +21,11 @@ class ProfileAbout extends Component {
     return (
       <div className="row">
       <div className="col-md-12">
-        <div className="card1 card-body bg-light mb-3">
+        <div className="card card-body bg-light mb-3">
           <h3 className="text-center text-info">{firstName}'s Bio</h3>
-          <p className="lead">{isEmpty(profile.bio) ? (<span>{firstName} Does not have a bio</span>) : (<span>{profile.bio}</span>)}
+          <p className="lead">{isEmpty(profile.bio) ? (<span>{firstName} Does not have a bio</span>) : (<span>{profile.bio} 
+
+</span>)}
           </p>
           <hr />
           <h3 className="text-center text-info">Need Help With</h3>
@@ -31,10 +33,14 @@ class ProfileAbout extends Component {
             <div className="d-flex flex-wrap justify-content-center align-items-center">
            {skills}
             </div>
+
+
           </div>
         </div>
       </div>
+     
     </div>
+    
     )
   }
 }

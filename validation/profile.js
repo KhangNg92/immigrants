@@ -26,41 +26,41 @@ if(Validator.isEmpty(data.skills)){
     errors.skills = 'Skills handle is required';
 }
 
-if(!isEmpty(data.website)){ //they're not required but 
-    if(!Validator.isURL(data.website)){
-        errors.website = 'Not a valid URL'
-    }
-}
+// if(!isEmpty(data.website)){ //they're not required but 
+//     if(!Validator.isURL(data.website)){
+//         errors.website = 'Not a valid URL'
+//     }
+// }
 
-if(!isEmpty(data.youtube)){ //they're not required but 
-    if(!Validator.isURL(data.youtube)){
-        errors.youtube = 'Not a valid URL'
-    }
-}
+// if(!isEmpty(data.youtube)){ //they're not required but 
+//     if(!Validator.isURL(data.youtube)){
+//         errors.youtube = 'Not a valid URL'
+//     }
+// }
 
-if(!isEmpty(data.twitter)){ //they're not required but 
-    if(!Validator.isURL(data.twitter)){
-        errors.twitter = 'Not a valid URL'
-    }
-}
+// if(!isEmpty(data.twitter)){ //they're not required but 
+//     if(!Validator.isURL(data.twitter)){
+//         errors.twitter = 'Not a valid URL'
+//     }
+// }
 
-if(!isEmpty(data.facebook)){ //they're not required but 
-    if(!Validator.isURL(data.facebook)){
-        errors.facebook = 'Not a valid URL'
-    }
-}
+// if(!isEmpty(data.facebook)){ //they're not required but 
+//     if(!Validator.isURL(data.facebook)){
+//         errors.facebook = 'Not a valid URL'
+//     }
+// }
 
-if(!isEmpty(data.linkedin)){ //they're not required but 
-    if(!Validator.isURL(data.linkedin)){
-        errors.linkedin = 'Not a valid URL'
-    }
-}
+// if(!isEmpty(data.linkedin)){ //they're not required but 
+//     if(!Validator.isURL(data.linkedin)){
+//         errors.linkedin = 'Not a valid URL'
+//     }
+// }
 
-if(!isEmpty(data.instagram)){ //they're not required but 
-    if(!Validator.isURL(data.instagram)){
-        errors.instagram = 'Not a valid URL'
-    }
-}
+// if(!isEmpty(data.instagram)){ //they're not required but 
+//     if(!Validator.isURL(data.instagram)){
+//         errors.instagram = 'Not a valid URL'
+//     }
+// }
     return {
         errors, 
         isValid: isEmpty(errors)
