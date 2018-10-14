@@ -4,7 +4,7 @@ img {
 
 .landing {
   position: relative;
-  background: url('./img/nitish-meena-198784-unsplash.jpg') no-repeat;
+  background: url('./img/work-together.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -94,6 +94,7 @@ p.lead1{
   animation: 
     typing 6s steps(40, end),
     blink-caret .75s step-end infinite;
+    font-size: 20px;
 }
 @keyframes typing {
   from { width: 0 }
@@ -174,4 +175,26 @@ p.lead1{
   top: auto;
   bottom: 0px;
   left: 43px;
+  }
+  .col-md-12{
+    background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+  padding-top: 80px;
+  }
+
+  .display-4 .text-center{
+    padding-bottom: 300px;
+  }
+  .display-5{
+    font-size: 65px;
+  font-family: 'Alfa Slab One', cursive;
+  }
+  .row1{
+    height: 100vh;
+    margin-top: -24px;
+    margin-bottom: -50px;
+    padding-top: 25px;
   }

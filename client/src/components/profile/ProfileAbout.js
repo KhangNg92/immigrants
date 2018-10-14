@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import isEmpty from '../../validation/is-empty'
+import Timeline from './Timeline';
 class ProfileAbout extends Component {
  
   
@@ -14,19 +15,17 @@ class ProfileAbout extends Component {
     const skills = profile.skills.map((skill, index) => (
 
       <div key = {index} className = "p-3">
-      <i className = "fa fa-check" /> {skill}
+      <i className = "fas fa-house-damage" /> {skill}
       
       </div>
     ))
     return (
       <div className="row">
-      <div className="col-md-12">
-        <div className="card card-body bg-light mb-3">
-          <h3 className="text-center text-info">{firstName}'s Bio</h3>
-          <p className="lead">{isEmpty(profile.bio) ? (<span>{firstName} Does not have a bio</span>) : (<span>{profile.bio} 
-
-</span>)}
-          </p>
+      <div className="col-md-11">
+        <div className="card1 card-body bg-light mb-3">
+          <h3 className="text-center text-info">{firstName}'s Status</h3>
+          <Timeline />
+          
           <hr />
           <h3 className="text-center text-info">Need Help With</h3>
           <div className="row">

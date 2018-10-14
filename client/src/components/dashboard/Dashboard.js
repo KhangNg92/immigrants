@@ -33,9 +33,9 @@ class Dashboard extends Component {
               <div>
                 <p className = 'lead text-muted'> Welcome <Link to ={`/profile/${profile.handle}`}>{user.name}</Link></p>
                 <ProfileActions />
-                {/* <Experience experience = {profile.experience}/>
+                {/* {/* <Experience experience = {profile.experience}/> */}
                 
-                <Education education = {profile.education}/> */}
+                <Education education = {profile.education}/> 
                 <div style = {{ marginBottom: '60px'}} />
                 <button onClick = { this.onDeleteClick.bind(this)}
                 className = "btn btn-danger"> Delete My Account</button>
@@ -58,7 +58,7 @@ class Dashboard extends Component {
         <div className = "container">
           <div className = "row">
           <div className = "col-md-12">
-          <h1 className = 'display-4'> Dashboard</h1>
+          <h1 className = 'display-4 text-center'> Dashboard</h1>
           {dashboardContent}
           </div>
           </div>        

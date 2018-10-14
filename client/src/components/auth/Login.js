@@ -48,7 +48,7 @@ onSubmit(e) { /*  e is event, whenever we type this will change*/
     return (
         <div className="login">
         <div className="container">
-          <div className="row">
+          <div className="row1">
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Log In</h1>
               <p className="lead text-center">Sign in to your Organization's account</p>

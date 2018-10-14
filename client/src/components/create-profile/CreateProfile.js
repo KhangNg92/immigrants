@@ -203,14 +203,14 @@ class CreateProfile extends Component {
                   info="Let we know what  we can help you with"
                 />
               
-                <TextAreaFieldGroup
+                {/* <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"
                   value={this.state.bio}
                   onChange={this.onChange}
                   error={errors.bio}
                   info="Tell us a little about yourself"
-                />
+                /> */}
 
                 <div className="mb-3">
                   <button

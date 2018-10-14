@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-
+import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import isEmpty from '../../validation/is-empty';
 class ProfileItem extends Component {
@@ -15,7 +15,7 @@ class ProfileItem extends Component {
           </div>
           <div className="col-lg-6 col-md-4 col-8">
             <h3>{profile.user.name}</h3>
-            <p>
+            <p className = "text-muted">
               {profile.status}{' '}
               {(profile.company) ? null : (
                 <span>at {profile.company}</span>
@@ -23,10 +23,12 @@ class ProfileItem extends Component {
             </p>
             <p>
               {isEmpty(profile.location) ? null : (
-                <span>{profile.location}</span>
+                <span>Current Residence: {profile.location}</span>
               )}
             </p>
-
+  <p>
+  Joined Date:  <Moment format = "YYYY/MM/DD"></Moment>
+  </p>
             <Link to={`/profile/${profile.handle}`} className="btn btn-dark">
               View Profile
             </Link>
@@ -36,7 +38,7 @@ class ProfileItem extends Component {
             <ul className="list-group">
               {profile.skills.slice(0, 4).map((skill, index) => (
                 <li key={index} className="list-group-item">
-                  <i className="fa fa-check pr-1" />
+                 <i className="fas fa-house-damage"></i>
                   {skill}
                 </li>
               ))}

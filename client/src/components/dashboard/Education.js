@@ -29,16 +29,18 @@ class Education extends Component {
       ))
     return (
       <div>
-        <h4 className = "mb-4"> Education Credentials</h4>
+        <h4 className = "mb-4"> Monthly's Report</h4>
         <table className = "table">
         <thead>
             <tr>
-                <th>School</th>
-                <th>Degree</th>
-                <th>Years</th>
-                <th></th>
-                </tr>     
-                    {education}
+                <th className = "text-center" >New Immigrant</th>
+                
+                <th className = "text-center">Contacted</th>
+                <th className = "text-center">Closed Files</th>
+                </tr>   
+                <td className = "text-center">12</td>  
+                <td className = "text-center">20</td>  
+                <td className = "text-center">5</td>  
                     </thead>
         </table>
       </div>

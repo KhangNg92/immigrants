@@ -7,7 +7,7 @@ class ProfileHeader extends Component {
 
     return (
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-11">
           <div className="card1 card-body bg-dark text-white mb-3">
             <div className="row">
               <div className="col-4 col-md-3 m-auto">
