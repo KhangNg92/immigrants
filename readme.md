@@ -1,4 +1,4 @@
-<img src="spree_logo.png" width="261">
+<img src="mPortal Logo.png" width="261">
 
 # mPortal
 
