@@ -16,7 +16,7 @@ import { connect } from 'react-redux';
       <div className="row">
        <div className="col-md-12 text-center">
 
-        <h1 className="display-5 mx-auto">Immigrant {" "}  {" "} Portal {" "} for {" "} St. Louis </h1>
+        <h1 className="display-5 mx-auto">Immigrant Portal for St. Louis </h1>
         <p className="lead1"> Matching non-profit organizations to immigrants</p>
        
         {/* <Link to="/register" className="btn btn-lg btn-dark ">Sign Up</Link>
