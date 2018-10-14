@@ -1,20 +1,20 @@
 import React from "react";
 import HorizontalTimeline from "react-horizontal-timeline";
 
-const VALUES = ["2018-10-22", "2018-03-23"];
+const VALUES = ["2018-10-13", "2018-10-14"];
 
 const EXAMPLE = [
   {
     data: "2018-10-13",
-    status: "status",
+    status: "",
     statusB: "",
-    statusE: "In Progress"
+    statusE: ""
   },
   {
-    data: "2018-03-23",
-    status: "status",
-    statusB: "Contact Date",
-    statusE: "Done"
+    data: "2018-10-14",
+    status: "",
+    statusB: "",
+    statusE: ""
   }
 ];
 
