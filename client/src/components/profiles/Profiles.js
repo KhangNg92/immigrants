@@ -31,7 +31,7 @@ import ProfileItem from './ProfileItem';
       <div className = "profiles">
       <div className = "container">
         <div className = "row">
-        <div className = "col-md-12">
+        <div className = "col-md-11">
             <h1 className = "display-4 text-center"> Immigrants' Profiles</h1>
             <p className = "lead text-center">
             Browse and connect with Immigrants
